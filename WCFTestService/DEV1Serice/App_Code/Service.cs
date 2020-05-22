@@ -13,8 +13,8 @@ public class Service : IDEV1Service
 	static string s = @"<NewDataSet></NewDataSet>";
 	public string GetBurnDownData()
 	{
-        //string s = SDDataBase.DBWrapper.GetBurnDownData();
-        //return  JsonConvert.SerializeObject(s);
-        return s+s+s+s+s+s;
+        string s = SDDataBase.DBWrapper.GetBurnDownData();
+		//return  JsonConvert.SerializeObject(s);
+		return s;
 	}
 }
